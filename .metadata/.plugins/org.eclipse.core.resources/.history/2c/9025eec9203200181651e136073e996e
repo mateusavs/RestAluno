@@ -1,0 +1,28 @@
+package fiap.scj.rest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+
+@Path("/aluno")
+public class AlunoResource {
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Aluno> getAllAlunos() {
+		List<Aluno> retorno = new ArrayList<Aluno>();
+		
+		retorno.add(new Aluno(123, "Humberto"));
+		retorno.add(new Aluno(124, "Doisberto"));
+		retorno.add(new Aluno(125, "Tresberto"));
+		
+		return retorno;
+	}
+	
+}

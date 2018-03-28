@@ -1,0 +1,8 @@
+package fiap.scj.rest;
+
+import javax.ws.rs.Path;
+
+@Path("/aluno")
+public class AlunoResource {
+	
+}

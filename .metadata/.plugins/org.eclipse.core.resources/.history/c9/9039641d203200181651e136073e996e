@@ -1,0 +1,5 @@
+package fiap.scj.rest;
+
+public class Aluno {
+
+}
